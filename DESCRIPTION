@@ -1,0 +1,10 @@
+Package: willsutils
+Title: Will's utils
+Version: 0.0.0.9000
+Authors@R: person("William", "Hulme", email = "william.hulme@outlook.com", role = c("aut", "cre"))
+Description: Some useful utility functions that I use a lot
+Depends: R (>= 3.4.3)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
