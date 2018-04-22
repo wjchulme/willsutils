@@ -1,2 +1,2 @@
-# willsutils
-Some useful utility functions that I use a lot
+# Will's Utils
+Some useful functions that I use a lot
