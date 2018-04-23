@@ -2,5 +2,10 @@
 
 export("%ni%")
 export(lvl)
+export(lvlval)
 export(mround)
+export(print_CIs)
+export(print_estCIs)
+export(print_pval)
+export(specify_decimal)
 export(summarise_tags)

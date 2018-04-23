@@ -18,15 +18,4 @@ summarise_tags(.tbl, .vars, ..., .removeF = FALSE)
 \description{
 This extends dplyr::summarise to work with groups that overlap
 }
-\examples{
-
-
-mtcars \%>\%
- group_by(am) \%>\%
- summarise_tags(
-   vars(cyl, hp_lt100 = hp<100),
-   meanmpg = mean(mpg),
-   meanwt = mean(wt)
- )
-}
 \keyword{dplyr}

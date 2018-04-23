@@ -2,9 +2,13 @@
 % Please edit documentation in R/lvl.R
 \name{lvl}
 \alias{lvl}
+\alias{lvlval}
+\alias{lvlval}
 \title{Get code or level}
 \usage{
 lvl(a)
+
+lvlval(a)
 }
 \arguments{
 \item{a}{character variable of form "[code]. [level]"}
@@ -12,10 +16,3 @@ lvl(a)
 \description{
 These functions extract the code (numeric) or the level (character) from a character variable of the form "[code]. [level]"
 }
-\examples{
-
-
-lvl(c("1. one", "2. two"))
-lvlval(c("1. one", "2. two"))
-}
-\keyword{BCIS}

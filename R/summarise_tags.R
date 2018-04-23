@@ -1,4 +1,3 @@
-
 #' Summarise overlapping groups
 #'
 #' This extends dplyr::summarise to work with groups that overlap
@@ -7,20 +6,11 @@
 #' @param ... new variables to summarise, passed to \link[dplyr]{summarise}
 #' @param .removeF defaults to 'FALSE'. If 'TRUE', removes all values where output value is 'FALSE'
 #' @keywords dplyr
+
+
+
+
 #' @export
-#' @examples
-#'
-#'
-#'mtcars %>%
-#'  group_by(am) %>%
-#'  summarise_tags(
-#'    vars(cyl, hp_lt100 = hp<100),
-#'    meanmpg = mean(mpg),
-#'    meanwt = mean(wt)
-#'  )
-
-
-
 summarise_tags <- function(.tbl, .vars, ..., .removeF=FALSE) {
   dots <- quos(...)
 
@@ -47,5 +37,18 @@ summarise_tags <- function(.tbl, .vars, ..., .removeF=FALSE) {
     unnest(tags) %>%
     slice_rows(group_vars(.tbl))
 }
+
+
+
+#' @examples
+#'
+#'
+#'mtcars %>%
+#'  group_by(am) %>%
+#'  summarise_tags(
+#'    vars(cyl, hp_lt100 = hp<100),
+#'    meanmpg = mean(mpg),
+#'    meanwt = mean(wt)
+#'  )
 
 ######################
