@@ -4,7 +4,7 @@
 #' @param .tbl data
 #' @param .vars unquoted variable names, passed to \link[dplyr]{vars}
 #' @param ... new variables to summarise, passed to \link[dplyr]{summarise}
-#' @param .removeF defaults to 'FALSE'. If 'TRUE', removes all values where output value is 'FALSE'
+#' @param .removeF defaults to `FALSE`. If `TRUE`, removes all values where output value is `FALSE`
 #' @keywords dplyr
 
 

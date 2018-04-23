@@ -3,8 +3,9 @@
 \name{lvl}
 \alias{lvl}
 \alias{lvlval}
+\alias{lvl}
 \alias{lvlval}
-\title{Get code or level}
+\title{Code-level functions}
 \usage{
 lvl(a)
 

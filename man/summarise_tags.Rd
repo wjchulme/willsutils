@@ -13,7 +13,7 @@ summarise_tags(.tbl, .vars, ..., .removeF = FALSE)
 
 \item{...}{new variables to summarise, passed to \link[dplyr]{summarise}}
 
-\item{.removeF}{defaults to 'FALSE'. If 'TRUE', removes all values where output value is 'FALSE'}
+\item{.removeF}{defaults to `FALSE`. If `TRUE`, removes all values where output value is `FALSE`}
 }
 \description{
 This extends dplyr::summarise to work with groups that overlap
