@@ -1,9 +1,10 @@
-#' Get code or level
+#' Code-level functions
 #'
 #' These functions extract the code (numeric) or the level (character) from a character variable of the form "[code]. [level]"
 #' @name lvl
 #' @aliases lvlval
 #' @param a character variable of form "[code]. [level]"
+NULL
 
 #' @rdname lvl
 #' @export
@@ -15,8 +16,6 @@ lvl <- function(a) as.numeric(gsub("[^0-9].+", "", a))
 #' @export
 # extracts text after number
 lvlval <- function(a) gsub("^[0-9]+. ", "", a)
-
-
 
 
 #' @examples
