@@ -1,6 +1,6 @@
 #' Not in
 #'
-#' This negates the %in% function. Used as a binary operator
+#' This negates the `%in%` function. Used as a binary operator.
 
 
 #' @examples
