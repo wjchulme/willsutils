@@ -35,7 +35,7 @@ summarise_tags <- function(.tbl, .vars, ..., .removeF=FALSE) {
       tags = map(data, ~ summarise_tags_nogroup(., .vars, !!!dots, .removeF = .removeF))
     ) %>%
     unnest(tags) %>%
-    slice_rows(group_vars(.tbl))
+    purrrlyr::slice_rows(group_vars(.tbl))
 }
 
 
