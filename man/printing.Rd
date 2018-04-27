@@ -5,8 +5,9 @@
 \alias{mround}
 \alias{specify_decimal}
 \alias{print_pval}
-\alias{print_estCIs}
-\alias{print_CIs}
+\alias{print_est1bracket}
+\alias{print_est2bracket}
+\alias{print_2bracket}
 \title{Printing statistics nicely}
 \usage{
 mround(x, base)
@@ -15,9 +16,11 @@ specify_decimal(x, k)
 
 print_pval(pval, k = 3)
 
-print_estCIs(x, xLL, xUL, round = 1)
+print_est1bracket(x, b, round = 1)
 
-print_CIs(xLL, xUL, round = 1)
+print_est2bracket(x, b1, b2, round = 1)
+
+print_2bracket(b1, b2, round = 1)
 }
 \arguments{
 \item{x}{Statistic}
@@ -28,7 +31,7 @@ print_CIs(xLL, xUL, round = 1)
 
 \item{pval}{p-value (or any probability)}
 
-\item{xLL, xUL}{lower and upper confidence limits}
+\item{b, b1, b2}{bracketed values}
 }
 \description{
 Printing statistics nicely
