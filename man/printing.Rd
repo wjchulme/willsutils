@@ -8,6 +8,7 @@
 \alias{print_est1bracket}
 \alias{print_est2bracket}
 \alias{print_2bracket}
+\alias{align_decimal}
 \title{Printing statistics nicely}
 \usage{
 mround(x, base)
@@ -21,6 +22,8 @@ print_est1bracket(x, b, round = 1)
 print_est2bracket(x, b1, b2, round = 1)
 
 print_2bracket(b1, b2, round = 1)
+
+align_decimal(x)
 }
 \arguments{
 \item{x}{Statistic}

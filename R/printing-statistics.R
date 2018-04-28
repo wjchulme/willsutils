@@ -54,6 +54,21 @@ print_2bracket <- function(b1, b2, round=1){
 }
 
 
+# adds pading so that decimals for printed numbers are aligned - nicked from skimr package (HOW DO I ATTRIBUTE?)
+#' @rdname printing
+#' @export
+align_decimal <- function(x){
+  split <- stringr::str_split(x, "\\.", simplify = TRUE)
+  if (ncol(split) < 2) return(x)
+  max_whole <- max(nchar(split[,1]))
+  max_decimal <- max(nchar(split[,2]))
+  left <- stringr::str_pad(split[,1], max_whole, side = "left")
+  right <- stringr::str_pad(split[,2], max_decimal, side = "right")
+  dec <- ifelse(split[, 2] == "", " ", ".")
+  sprintf("%s%s%s", left, dec, right)
+}
+
+
 
 
 
