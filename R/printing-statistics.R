@@ -22,7 +22,12 @@ mround <- function(x, base) { base * round(x / base) }
 # rounds to k decimal places, includes zeros and returns character vector
 #' @rdname printing
 #' @export
-specify_decimal <- function(x, k) trimws(format(round(x, k), nsmall = k))
+specify_decimal <- function(x, k, trim=FALSE) {
+
+  fmtd <- format(round(x, k), nsmall = k)
+  if (trim) {fmtd <- trimws(fmtd)}
+  return(fmtd)
+}
 
 # prints p-value, censoring at kth decimal place
 #' @rdname printing

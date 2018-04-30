@@ -13,7 +13,7 @@
 \usage{
 mround(x, base)
 
-specify_decimal(x, k)
+specify_decimal(x, k, trim = FALSE)
 
 print_pval(pval, k = 3)
 
