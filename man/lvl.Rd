@@ -3,8 +3,6 @@
 \name{lvl}
 \alias{lvl}
 \alias{lvlval}
-\alias{lvl}
-\alias{lvlval}
 \title{Code-level functions}
 \usage{
 lvl(a)

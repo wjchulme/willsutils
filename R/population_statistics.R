@@ -3,6 +3,7 @@
 #' @param x a numeric vector.
 #' @param y NULL (default) or a vector.
 #' @param na.rm logical. Should missing values be removed?
+#' @name population_estimates
 #' @examples
 #'
 NULL
