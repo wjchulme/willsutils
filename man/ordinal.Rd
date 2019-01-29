@@ -2,32 +2,32 @@
 % Please edit documentation in R/ordinal_distribution.R
 \name{ordinal}
 \alias{ordinal}
-\alias{rordinal}
 \alias{dordinal}
 \alias{pordinal}
 \alias{qordinal}
+\alias{rordinal}
 \title{Mass, distribution function, quantile function and random generation for an ordinal distribution.}
 \usage{
-rordinal(n, prob, as.numeric = FALSE)
-
 dordinal(x, prob, log = FALSE)
 
 pordinal(q, prob, log = FALSE)
 
-qordinal(p, prob, as.numeric = FALSE)
+qordinal(p, prob, as.numeric = TRUE)
+
+rordinal(n, prob, as.numeric = TRUE)
 }
 \arguments{
-\item{n}{number of random values to return}
+\item{x, q}{vector of integers or character values that must exist in `names(prob)`}
 
 \item{prob}{vector of probabilities for observing each value}
-
-\item{as.numeric}{logicial; return value as numeric or character?}
-
-\item{x, q}{vector of integers or character values that must exist in `names(prob)`}
 
 \item{log}{logical; if TRUE, probabilities p are given as log(p)}
 
 \item{p}{vector of probabilities}
+
+\item{as.numeric}{logical; return value as numeric or character?}
+
+\item{n}{number of random values to return}
 }
 \description{
 Mass, distribution function, quantile function and random generation for an ordinal distribution.
