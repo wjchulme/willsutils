@@ -6,16 +6,16 @@
 \alias{sd.p}
 \title{Population estimates for var and sd}
 \usage{
-var.p(x, y = NULL, na.rm = FALSE)
+var.p(x, na.rm = FALSE)
 
 sd.p(x, na.rm = FALSE)
 }
 \arguments{
 \item{x}{a numeric vector.}
 
-\item{y}{NULL (default) or a vector.}
-
 \item{na.rm}{logical. Should missing values be removed?}
+
+\item{y}{NULL (default) or a vector.}
 }
 \description{
 Population estimates for var and sd
