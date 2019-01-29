@@ -25,6 +25,7 @@ rordinal <- function(n, prob, as.numeric = FALSE){
   else sample(rep(as.character(seq_along(counts)), counts))
 }
 
+
 # probability mass function (or density)
 #' @rdname ordinal
 #' @export
@@ -39,20 +40,22 @@ dordinal <- function(x, prob, log = FALSE){
   else prob[x]
 }
 
+
 # distribution function
 #' @rdname ordinal
 #' @export
 pordinal <- function(q, prob, log = FALSE){
 
-  if(is.numeric(x))   if(!all(q %in% seq_along(prob)))  stop("numeric index out-of-bounds")
-  if(is.character(x)) if(!all(q %in% names(prob))) stop("character index out-of-bounds")
+  if(is.numeric(q))   if(!all(q %in% seq_along(prob)))  stop("numeric index out-of-bounds")
+  if(is.character(q)) if(!all(q %in% names(prob))) stop("character index out-of-bounds")
 
   prob <- prob/sum(prob) #normalise
   cumulprob <- cumsum(prob)
 
-  if(log) log(cumulprob[x])
-  else cumulprob[x]
+  if(log) log(cumulprob[q])
+  else cumulprob[q]
 }
+
 
 # quantile function
 #' @rdname ordinal
